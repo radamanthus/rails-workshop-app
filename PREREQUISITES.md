@@ -1,4 +1,4 @@
-# Software
+## Install Rails
 
 We expect all participants to have the following running on their laptops:
 
@@ -8,8 +8,10 @@ We expect all participants to have the following running on their laptops:
 - Sqlite
 - Git
 
-Prior to the workshop, please go through the steps here:
+If you have these already running on your laptop, great! If not and you need some help, you can follow the steps here:
 http://docs.railsbridge.org/installfest/
+
+## Make sure Rails works
 
 After installing, please make sure you can run the following successfully:
 
@@ -26,13 +28,19 @@ If you can run these commands successfully then your laptop is in perfect condit
 
 If you're stuck, ask in the [mailing list](https://groups.google.com/forum/#!forum/ruby-ph). Or catch us in our top-secret [hideout](http://webchat.freenode.net/?channels=phrug)
 
-# Practice App (There is still no Rails app on this repositry. Please check again tomorrow, February 14)
+## Clone the practice app
 
 Prior to the workshop, please clone this [git repository](https://github.com/radamanthus/rails-workshop-app)
 
+Run these commands:
+
+```
 git clone https://github.com/radamanthus/rails-workshop-app
 cd rails-workshop-app
 bundle install
 bundle exec rake db:create
 bundle exec rake db:migrate
 bundle exec rake db:seed
+```
+
+(EDIT: There is still no Rails app on this repositry. Please check again tomorrow, February 14)
