@@ -4,6 +4,14 @@
 
 # Exercise 1: Run Ruby From the Command Line
 
+### Ruby some Ruby code
+
+```
+ruby -e "puts 'Hello, World"
+ruby -e "puts 1+1"
+ruby -e "puts 1.class"
+```
+
 ### Run a Ruby command-line app
 
 ```

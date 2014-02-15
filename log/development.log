@@ -96,3 +96,155 @@ Started GET "/channels" for 127.0.0.1 at 2014-02-15 06:46:34 +0800
 Processing by ChannelsController#index as HTML
   Rendered text template (0.0ms)
 Completed 200 OK in 39ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/channels/1" for 127.0.0.1 at 2014-02-15 06:53:50 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 73ms
+
+NoMethodError (undefined method `pry' for #<Binding:0x007fc5a9866840>):
+  app/controllers/channels_controller.rb:8:in `show'
+
+
+  Rendered /Users/rad/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/rad/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /Users/rad/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /Users/rad/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started GET "/channels/1" for 127.0.0.1 at 2014-02-15 06:54:02 +0800
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template channels/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/rad/Projects/community/rails-workshop-app/app/views"
+):
+  app/controllers/channels_controller.rb:8:in `show'
+
+
+  Rendered /Users/rad/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/channels/1" for 127.0.0.1 at 2014-02-15 06:54:54 +0800
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template channels/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/rad/Projects/community/rails-workshop-app/app/views"
+):
+  app/controllers/channels_controller.rb:9:in `show'
+
+
+  Rendered /Users/rad/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/channels/1" for 127.0.0.1 at 2014-02-15 06:55:09 +0800
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered channels/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1368ms (Views: 1367.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/channel.css?body=1" for 127.0.0.1 at 2014-02-15 06:55:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:10 +0800
+
+
+Started GET "/assets/channel.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 06:55:10 +0800
+
+
+Started GET "/channels/1001" for 127.0.0.1 at 2014-02-15 06:55:15 +0800
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1001"}
+  Rendered channels/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:15 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 06:55:16 +0800
+
+
+Started GET "/channels/1001" for 127.0.0.1 at 2014-02-15 07:22:17 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1001"}
+  Rendered channels/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 275ms (Views: 238.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 07:22:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 07:22:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 07:22:18 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 07:22:18 +0800
+
+
+Started GET "/assets/channel.js?body=1" for 127.0.0.1 at 2014-02-15 07:22:18 +0800
+
+
+Started GET "/assets/channel.css?body=1" for 127.0.0.1 at 2014-02-15 07:22:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 07:22:18 +0800
+
+
+Started GET "/channels/1001" for 127.0.0.1 at 2014-02-15 07:22:30 +0800
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1001"}
+  Rendered channels/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38489ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-15 07:23:09 +0800
+
+
+Started GET "/assets/channel.css?body=1" for 127.0.0.1 at 2014-02-15 07:23:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-15 07:23:09 +0800
+
+
+Started GET "/assets/channel.js?body=1" for 127.0.0.1 at 2014-02-15 07:23:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-15 07:23:09 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-15 07:23:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-15 07:23:09 +0800
+
+
+Started GET "/channels/1001" for 127.0.0.1 at 2014-02-15 07:58:07 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1001"}
+Completed   in 62810ms
